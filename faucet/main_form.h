@@ -8,15 +8,10 @@ namespace faucet {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
-	/// <summary>
-	/// Summary for main_form
-	/// </summary>
 	public ref class main_form : public System::Windows::Forms::Form {
 		private: System::ComponentModel::Container^ components;
-	private: System::Windows::Forms::RichTextBox^ outputField;
+		private: System::Windows::Forms::RichTextBox^ outputField;
 
-
-	
 		public: main_form(void)	{
 			InitializeComponent();
 		}
