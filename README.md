@@ -8,6 +8,6 @@ When opened, Faucet will attempt to resolve a bogus hostname 15 times--this is d
   - Your IP: [IP]
   - Detected DNS Servers:
       - IP: [IP]
-        - ASN: [ASN #]
+        - ASN: [ASN# / ISP]
         - Country: [country]
       - ...and so on for every detected server.
