@@ -1,4 +1,4 @@
-# Faucet
+<h1 "align="center">Faucet</h1>
 Have you ever been worried that your DNS servers might be screwing your privacy over whilst using a VPN? Well, now you can easily check your DNS configuration for leaks with only two clicks!
 
 <br/>
