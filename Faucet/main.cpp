@@ -47,7 +47,6 @@ void checkLeaks(std::string id) {
 }
 
 void parseJSON(std::string json) {
-//	std::cout << json;
 	nlohmann::json jsonObject = nlohmann::json::parse(json);
 	for (auto &i : jsonObject.items()) {
 		if (i.value()["type"] != "conclusion") { // inherent std::string operator==() and operator!=()
