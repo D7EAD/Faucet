@@ -35,7 +35,7 @@ void performCheck() {
 
 void checkLeaks(std::string id) {
 	cpr::Response r = cpr::Get (
-		cpr::Url{
+		cpr::Url {
 			BASE_URL + id + "?json"
 		},
 		cpr::Header {
