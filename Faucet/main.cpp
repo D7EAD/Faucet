@@ -12,7 +12,7 @@ void performCheck();
 void checkLeaks(std::string id);
 void parseJSON(std::string json);
 
-int main() {;
+int main() {
 	srand(time(NULL));
 	try {
 		performCheck();
