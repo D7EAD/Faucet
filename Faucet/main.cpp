@@ -18,7 +18,7 @@ int main() {;
 		performCheck();
 	} catch (nlohmann::json::parse_error e) {
 		std::cout << "An error occurred!" << std::endl;
-		exit(1); // possibly loss of connection
+		exit(1); // possibly a loss of connection
 	}
 }
 
@@ -35,7 +35,7 @@ void performCheck() {
 
 void checkLeaks(std::string id) {
 	cpr::Response r = cpr::Get (
-		cpr::Url{
+		cpr::Url {
 			BASE_URL + id + "?json"
 		},
 		cpr::Header {
