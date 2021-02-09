@@ -4,6 +4,6 @@ Have you ever been worried that your DNS servers might be screwing your privacy 
 <br/>
 
 # What It Does
-When opened, Faucet will attempt to resolve a bogus hostname 15 times--this is done in your terminal window. Once finished, the domain name servers that are detected will be displayed in a result window in the following format:
+When opened, Faucet will attempt to resolve a bogus hostname 10 times--this is done in your terminal window. Once finished, the domain name servers that are detected will be displayed in a result window in the following format:
 
 <img src="images/image.PNG">
