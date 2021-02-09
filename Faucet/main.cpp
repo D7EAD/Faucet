@@ -16,10 +16,11 @@ int main() {;
 	srand(time(NULL));
 	try {
 		performCheck();
-	} catch (nlohmann::json::parse_error e) {
-		std::cout << "An error occurred!" << std::endl;
-		exit(1); // possibly a loss of connection
+	} catch (std::exception e) {
+		std::cout << "An error occurred : " << e.what() << std::endl;
+		getchar(); exit(1); // likely connection issue
 	}
+	getchar();
 }
 
 void performCheck() {
@@ -59,7 +60,7 @@ void parseJSON(std::string json) {
 			}
 		}
 		else {
-			std::cout << "\nStatus: " << static_cast<std::string>(i.value()["ip"]); // bash.ws JSON responses are odd as it stores DNS leak status in "ip" for last entry.
+			std::cout << "\nStatus: " << static_cast<std::string>(i.value()["ip"]) << " Done."; // bash.ws JSON responses are odd as it stores DNS leak status in "ip" for last entry.
 		}
 		std::cout << std::endl;
 	}
