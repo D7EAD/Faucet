@@ -26,7 +26,7 @@ void performCheck() {
 	std::cout << "Checking leaks...\n" << std::endl;
 	std::string id = std::to_string((rand() % 9999999 + 1000000));
 	for (int i = 1; i <= 10; i++) {
-		std::string command = "ping -n 1 " + std::to_string(i) + "." + id + ".bash.ws";
+		std::string command = "ping -n 1 " + std::to_string(i) + "." + id + ".bash.ws >NUL";
 		system(command.c_str());
 	}
 	checkLeaks(id);
